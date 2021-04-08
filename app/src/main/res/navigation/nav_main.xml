@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main.xml"
+    app:startDestination="@id/fragment_for_main">
+
+    <fragment
+        android:id="@+id/fragment_for_main"
+        android:name="com.edw.kotlinandjavabasic.ui.MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_fragment_for_main_to_fragment_for_generic"
+            app:destination="@id/fragment_for_generic"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragment_for_main_to_lockFragment"
+            app:destination="@id/lockFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragment_for_main_to_designPatternsFragment"
+            app:destination="@id/designPatternsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragment_for_main_to_threadPoolExecutorFragment"
+            app:destination="@id/threadPoolExecutorFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragment_for_main_to_bitmapCacheFragment"
+            app:destination="@id/bitmapCacheFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragment_for_main_to_networkCacheFragment"
+            app:destination="@id/networkCacheFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragment_for_main_to_ipcFragment"
+            app:destination="@id/ipcFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragment_for_main_to_queueFragment"
+            app:destination="@id/queueFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_for_generic"
+        android:name="com.edw.kotlinandjavabasic.ui.GenericFragment"
+        android:label="GenericFragment"
+        tools:layout="@layout/fragment_generic" />
+
+    <fragment
+        android:id="@+id/lockFragment"
+        android:name="com.edw.kotlinandjavabasic.ui.LockFragment"
+        android:label="LockFragment"
+        tools:layout="@layout/fragment_lock" />
+
+    <fragment
+        android:id="@+id/designPatternsFragment"
+        android:name="com.edw.kotlinandjavabasic.ui.DesignPatternsFragment"
+        android:label="DesignPatternsFragment"
+        tools:layout="@layout/fragment_design_patterns">
+        <action
+            android:id="@+id/action_designPatternsFragment_to_singletonFragment"
+            app:destination="@id/singletonFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_designPatternsFragment_to_builderFragment"
+            app:destination="@id/builderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/threadPoolExecutorFragment"
+        android:name="com.edw.kotlinandjavabasic.ui.ThreadPoolExecutorFragment"
+        android:label="ThreadPoolExecutorFragment"
+        tools:layout="@layout/fragment_thread_pool_executor" />
+    <fragment
+        android:id="@+id/bitmapCacheFragment"
+        android:name="com.edw.kotlinandjavabasic.ui.BitmapCacheFragment"
+        android:label="BitmapCacheFragment"
+        tools:layout="@layout/fragment_bitmap_cache" />
+    <fragment
+        android:id="@+id/networkCacheFragment"
+        android:name="com.edw.kotlinandjavabasic.ui.NetworkCacheFragment"
+        android:label="NetworkCacheFragment"
+        tools:layout="@layout/fragment_network_cache" />
+    <fragment
+        android:id="@+id/ipcFragment"
+        android:name="com.edw.kotlinandjavabasic.ui.IpcFragment"
+        android:label="IpcFragment"
+        tools:layout="@layout/fragment_ipc" />
+    <fragment
+        android:id="@+id/queueFragment"
+        android:name="com.edw.kotlinandjavabasic.ui.QueueFragment"
+        android:label="QueueFragment"
+        tools:layout="@layout/fragment_queue" />
+    <fragment
+        android:id="@+id/singletonFragment"
+        android:name="com.edw.kotlinandjavabasic.ui.SingletonFragment"
+        android:label="SingletonFragment"
+        tools:layout="@layout/fragment_singleton" />
+    <fragment
+        android:id="@+id/builderFragment"
+        android:name="com.edw.kotlinandjavabasic.ui.BuilderFragment"
+        android:label="BuilderFragment"
+        tools:layout="@layout/fragment_builder" />
+
+</navigation>
